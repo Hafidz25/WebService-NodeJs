@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dprs",
+  "info": {
+    "name": "dpr"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "major": {
+      "model": "major"
+    },
+    "grade": {
+      "model": "grade"
+    }
+  }
+}

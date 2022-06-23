@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "majors",
+  "info": {
+    "name": "major",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "short": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "keyword_majors": {
+      "via": "major",
+      "collection": "keyword-major"
+    }
+  }
+}

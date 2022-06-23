@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/keyword-grades",
+      "handler": "keyword-grade.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keyword-grades/count",
+      "handler": "keyword-grade.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keyword-grades/:id",
+      "handler": "keyword-grade.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/keyword-grades",
+      "handler": "keyword-grade.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/keyword-grades/:id",
+      "handler": "keyword-grade.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/keyword-grades/:id",
+      "handler": "keyword-grade.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

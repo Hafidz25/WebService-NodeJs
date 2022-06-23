@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keyword_grades",
+  "info": {
+    "name": "keyword grade",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keyword": {
+      "type": "string"
+    },
+    "grade": {
+      "model": "grade",
+      "via": "keyword_grades"
+    }
+  }
+}
