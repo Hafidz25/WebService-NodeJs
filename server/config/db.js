@@ -3,7 +3,7 @@ const koneksi = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'mejakitabot',
+    database: 'db_chatbot',
     multipleStatements: true
 });
 
